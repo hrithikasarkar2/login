@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+body 
+{font-family: Arial, Helvetica, sans-serif;
+	background: lightyellow;
+}</style>
+<head>
+	<title><%=title %></title>
+</head>
+<body>
+<h1><%=status %></h1>
+<a href="/">Go to home page</a>
+<hr>
+<div class="container">
+<table class="table"> 
+	
+		<tr>
+			<th>User id</th>
+			<th>Password
+			</th>
+		</tr> 
+		<%
+		data.forEach(function(row){
+
+		%>
+
+		<tr>
+			<td><%=row.USER_ID %></td>
+			<td><%=row.PASSWORD %></td>
+		</tr>
+
+
+		<%
+	})
+
+
+
+		%>
+
+</table>
+</div>
+</body>
+</html>		

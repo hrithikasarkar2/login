@@ -1,0 +1,21 @@
+<!-- run your code --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%='otp' %></title>
+	<link rel="stylesheet" type="text/css" href="/otp1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<h1><%=msg %></h1>
+<form method="post" action="/otp" >
+	<label for="otp"><i class="fa fa-unlock-alt" style="font-size:27px"></i></label>
+	<input type="text" id="otp" name="otp" placeholder="Enter OTP"><br>
+	<button class= "btn " type="Submit" style="font-size:14px">Submit <i class="fa fa-hourglass-1"></i></button>
+	<button class= "btn " type="Reset" style="font-size:14px">Reset <i class="fa fa-rotate-left"></i></button>
+	<a href="/">Go to login page</a>
+</form>
+</body>
+</html>		
